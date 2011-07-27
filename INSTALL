@@ -52,6 +52,7 @@ cp icons/bumblebee.svg /usr/share/icons/
 #Set the correct right for some files
 chmod +x /usr/local/bin/bumblebee-indicator
 chmod +x /usr/local/bin/app/*
+chmod +x /usr/local/bin/ecoptirun
 chmod +x /usr/share/applications/bumblebee-app-settings.desktop
 chmod +x /usr/share/applications/bumblebee-indicator.desktop
 
