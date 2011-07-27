@@ -1,0 +1,8 @@
+
+[Desktop Entry]
+Name=Bumblebee Applications Settings
+Comment=A configuration tool, to set applications to run with Bumblebee
+Exec=bumblebee-app-settings
+Icon=bumblebee
+Type=Application
+Categories=System;Settings;GNOME;GTK;

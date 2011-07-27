@@ -1,0 +1,64 @@
+#! /bin/bash
+
+### BEGIN LICENSE
+#
+# ----------------------------------------------------------------------------
+# "THE BEER-WARE LICENSE" (Revision 42):
+# <davy.renaud@laposte.net> wrote this file. As long as you retain this notice you
+# can do whatever you want with this stuff. If we meet some day, and you think
+# this stuff is worth it, you can buy me a beer in return Davy Renaud (glyptostroboides)
+# ----------------------------------------------------------------------------
+#
+
+#    This file is part of bumblebee-ui.
+#
+#    bumblebee-ui is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    bumblebee-ui is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with bumblebee-ui.  If not, see <http://www.gnu.org/licenses/>.
+#
+### END LICENSE
+
+########################################
+#BE CAREFULL THIS IS A RELEASE CANDIDATE
+########################################
+#NEED TO BE TESTED
+
+#Copy ecoptirun : a modified script to take up to date manually
+cp ecoptirun /usr/local/bin
+#Copy software files /app, /icons, bumblebee-indicator in /usr/local/bin
+cp -R app/ /usr/local/bin/app
+cp -R icons/ /usr/local/bin/icons
+cp bumblebee-indicator /usr/local/bin
+
+#Create bumblebee-app-settings a link to AppSettings.py 
+ln -s /usr/local/bin/app/AppSettings.py /usr/local/bin/bumblebee-app-settings
+
+#Copy desktop files in /usr/share/applications
+cp bumblebee-app-settings.desktop /usr/share/applications/
+cp bumblebee-indicator.desktop /usr/share/applications/
+
+#Copy or link icons in /usr/share/icons or /usr/share/pixmaps
+cp icons/bumblebee.svg /usr/share/icons/
+
+#Set the correct right for some files
+chmod +x /usr/local/bin/bumblebee-indicator
+chmod +x /usr/local/bin/app/*
+chmod +x /usr/share/applications/bumblebee-app-settings.desktop
+chmod +x /usr/share/applications/bumblebee-indicator.desktop
+
+#TO DO MANUALLY
+#Add bumblebee-indicator at startup
+#
+#
+#
+#
+

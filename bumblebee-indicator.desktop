@@ -1,0 +1,8 @@
+
+[Desktop Entry]
+Name=Bumblebee Indicator
+Comment=An application indicator for Bumblebee (allow to run application with a discrete graphic card)
+Exec=bumblebee-indicator
+Icon=bumblebee
+Type=Application
+Categories=System;Settings;GNOME;GTK;
