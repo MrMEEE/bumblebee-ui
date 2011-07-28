@@ -33,7 +33,8 @@
 #NEED TO BE TESTED
 
 #Copy ecoptirun : a modified script to take up to date manually
-cp ecoptirun /usr/local/bin
+#cp ecoptirun /usr/local/bin --> Moved to the bumblebee project..
+
 #Copy software files /app, /icons, bumblebee-indicator in /usr/local/bin
 cp -R app/ /usr/local/bin/app
 cp -R icons/ /usr/local/bin/icons
