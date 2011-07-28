@@ -116,7 +116,7 @@ class BumblebeeIndicator():
     def update_menu(self, widget=None):	
         self.pref_menu=gtk.Menu()
         subitem = gtk.MenuItem("Glxgears")
-        subitem.connect("activate", self.call_app, ['ecoptirun', 'glxgears'])
+        subitem.connect("activate", self.call_app, ['optirun', 'glxgears'])
         subitem.show()
         self.pref_menu.append(subitem)
 	file_set.get_configured_from_cfg()
