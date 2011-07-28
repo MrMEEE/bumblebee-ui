@@ -145,7 +145,7 @@ class BumblebeeIndicator():
 	    return True
 	
     def attention_state_condition(self):
-	    if  os.path.exists("/tmp/.X1-lock"): return True
+	    if  os.path.exists("/tmp/.X8-lock"): return True
 	    else: return False
 
     def set_attention_state(self, notify=True):
