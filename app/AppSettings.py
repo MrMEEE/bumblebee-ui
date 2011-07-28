@@ -42,6 +42,12 @@ if os.path.exists(Config.ui_config_file_path):
 	print "Using configuration file: " + Config.ui_config_file_path
 else:
         print "Configuration File does not exist, creating.."
+        configdir = os.path.dirname(Config.ui_config_file_directory)
+        try:
+        	os.stat(configdir)
+        except:
+		os.mkdir(configdir)
+                
         file = open(Config.ui_config_file_path, 'w')
         file.write("[Bumblebee UI]\n")
         file.write("preferred_app = []\n")
