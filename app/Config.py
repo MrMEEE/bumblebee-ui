@@ -40,7 +40,7 @@ user_desktop_file_directory = user_home_directory + user_relative_desktop_file_d
 global_desktop_file_directory = '/usr/share/applications/'
 
 #ICONS FILE PATH
-icon_file_directory = '/usr/local/bin/icons/'
+icon_file_directory = '/usr/share/bumblebee-ui/icons/'
 
 #CONFIG FILES PATH
 ui_config_file_directory = user_desktop_file_directory

@@ -62,8 +62,8 @@ class BumblebeeIndicator():
         self.ind.set_status (appindicator.STATUS_ACTIVE)
         self.ind.set_icon_theme_path(app.Config.icon_file_directory)
 	#TODO The icons style and accesibility must be enhanced : see icons/test directory
-    	self.ind.set_icon("bumblebee-indicator",'Bumblebee is unactive')
-        self.ind.set_attention_icon ("bumblebee-indicator-active",'Bumblebee is active')
+    	self.ind.set_icon(app.Config.icon_file_directory + "bumblebee-indicator.svg",'Bumblebee is unactive')
+        self.ind.set_attention_icon (app.Config.icon_file_directory + "bumblebee-indicator-active.svg",'Bumblebee is active')
                 
         self.card_state=False
 
